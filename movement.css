@@ -12,6 +12,45 @@ p {
   font-size: 20px;
 }
 
-img {
- 
+.circle {
+  height: 300px;
+  width: 500 px;
+  border-radius: 50%;
+  background-color: 50%;
+}
+
+/*
+Source - https://stackoverflow.com/a/44414637
+Posted by nick zoum, modified by community. See post 'Timeline' for change history
+Retrieved 2026-07-21, License - CC BY-SA 3.0
+*/
+
+.image-swap {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  height: 300px;
+  width: 500 px;
+}
+
+.image-swap>img {
+  pointer-events: none;
+  display: none;
+}
+
+.image-swap>img:first-child {
+  display: block;
+}
+
+.image-swap:active>img:first-child {
+  display: none;
+}
+
+.image-swap:active>img:last-child {
+  display: block;
+  height: 30px;
+  width: 50 px;
 }
