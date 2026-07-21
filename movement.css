@@ -1,5 +1,13 @@
-header {
-  background-color: #2196a3;
+title {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
   text-align: center;
-  padding: 10px;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
 }
